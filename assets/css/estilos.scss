@@ -1,0 +1,77 @@
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@600&display=swap');
+
+/* Cores */
+$branco: #fff;
+$paleCyan: #ebfbff;
+$darkCyan: #00252e;
+$pink: #ff52bf;
+
+/*Elementos padrão*/
+@mixin btn ($corFundo, $corTexto, $corBorda){
+    color: $corTexto;
+    background-color: $corFundo;
+    border: 1px solid $corBorda;
+    border-radius: 34px;
+    padding: 15px 65px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.8125em;
+    text-transform: capitalize;
+    display: inline-block;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: capitalize;
+}
+
+$espaco-mb: 40px;
+
+
+/* Elementos */
+body{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+
+header{
+    background: url('../imagens/bg-hero-desktop.svg') no-repeat $paleCyan;
+    background-size: cover;
+    .topo{
+        img{
+            height: 30px;
+            width: auto;
+        }
+        nav{
+            a{
+                @include btn($branco, $darkCyan, $darkCyan)
+            }
+        }
+    }
+    .hero{
+        padding-top: 70px;
+        .txt-hero{
+            margin-right: 80px;
+            h2{
+                font-size: 1.94em;
+                line-height: 1.5em;
+                margin-bottom: $espaco-mb;
+            }
+            p{
+                margin-bottom: $espaco-mb;
+            }
+            a{
+                @include btn($pink, $branco, $pink)
+            }
+        }
+        img{
+            height: 480px;
+        }        
+    }
+}

@@ -1,0 +1,69 @@
+@charset "UTF-8";
+/* Fontes */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@600&display=swap");
+/* Cores */
+/*Elementos padrão*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: capitalize;
+}
+
+/* Elementos */
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+header {
+  background: url("../imagens/bg-hero-desktop.svg") no-repeat #ebfbff;
+  background-size: cover;
+}
+header .topo img {
+  height: 30px;
+  width: auto;
+}
+header .topo nav a {
+  color: #00252e;
+  background-color: #fff;
+  border: 1px solid #00252e;
+  border-radius: 34px;
+  padding: 15px 65px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.8125em;
+  text-transform: capitalize;
+  display: inline-block;
+}
+header .hero {
+  padding-top: 70px;
+}
+header .hero .txt-hero {
+  margin-right: 80px;
+}
+header .hero .txt-hero h2 {
+  font-size: 1.94em;
+  line-height: 1.5em;
+  margin-bottom: 40px;
+}
+header .hero .txt-hero p {
+  margin-bottom: 40px;
+}
+header .hero .txt-hero a {
+  color: #fff;
+  background-color: #ff52bf;
+  border: 1px solid #ff52bf;
+  border-radius: 34px;
+  padding: 15px 65px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.8125em;
+  text-transform: capitalize;
+  display: inline-block;
+}
+header .hero img {
+  height: 480px;
+}/*# sourceMappingURL=estilos.css.map */
