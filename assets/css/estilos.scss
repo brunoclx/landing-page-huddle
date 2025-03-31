@@ -12,12 +12,10 @@ $pink: #ff52bf;
     color: $corTexto;
     background-color: $corFundo;
     border: 1px solid $corBorda;
-    border-radius: 34px;
     padding: 15px 65px;
     text-decoration: none;
     font-weight: 700;
     font-size: 0.8125em;
-    text-transform: capitalize;
     display: inline-block;
 }
 
@@ -50,7 +48,7 @@ header{
         }
         nav{
             a{
-                @include btn($branco, $darkCyan, $darkCyan)
+                @include btn($branco, $darkCyan, $branco)
             }
         }
     }
@@ -73,5 +71,99 @@ header{
         img{
             height: 480px;
         }        
+    }
+}
+
+main{
+    article{
+        margin-bottom: $espaco-mb;
+        .texto-boxs{
+            h3{
+                font-size: 1.25em;
+                margin-bottom: 30px;
+            }            
+        }
+        img{
+            width: auto;
+            height: 300px;
+        }
+    }
+    .cta-footer{
+        h4{
+            font-size: 1.25em;
+            margin-bottom: 30px; 
+        }
+        a{
+            @include btn($pink, $branco, $pink)
+        }
+    }
+}
+
+footer{
+    background-color: $darkCyan;
+    .conteudo-footer{
+        display: grid;
+        grid-template-columns: 2fr 2fr 1fr;
+        .dados{
+            img{
+                width: auto;
+                height: 30px;
+                filter: brightness(0) invert(1); /* Transforma elementos em branco */
+                margin-bottom: $espaco-mb;
+            }
+            ul{
+                li{
+                    margin-bottom: $espaco-mb - 20px;
+                    display: flex;
+                    align-items: start;
+                    &.endereco{
+                        &::before{
+                            content: '';
+                            background-image: url('../imagens/icon-location.svg');
+                            background-repeat: no-repeat;
+                            background-size: auto;
+                            width: 80px;
+                            height: 25px;
+                            display: inline-block;
+                            margin-right: 10px;
+                        }
+                    }
+                    &.telefone{
+                        &::before{
+                            content: '';
+                            background-image: url('../imagens/icon-phone.svg');
+                            background-repeat: no-repeat;
+                            background-size: auto;
+                            width: 25px;
+                            height: 25px;
+                            display: inline-block;
+                            margin-right: 10px;
+                        }
+                    }
+                    &.e-mail{
+                        &::before{
+                            content: '';
+                            background-image: url('../imagens/icon-email.svg');
+                            background-repeat: no-repeat;
+                            background-size: auto;
+                            width: 25px;
+                            height: 25px;
+                            display: inline-block;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .menu-dados{
+            display: flex;
+            justify-content: center;
+            nav{
+                ul{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr; /* Divide em duas colunas iguais */
+                }
+            }
+        }
     }
 }
