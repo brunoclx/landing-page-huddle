@@ -92,10 +92,11 @@ main .cta-footer a {
 
 footer {
   background-color: #00252e;
+  padding-bottom: 70px;
 }
 footer .conteudo-footer {
   display: grid;
-  grid-template-columns: 2fr 2fr 1fr;
+  grid-template-columns: 2fr 3fr 1fr;
 }
 footer .conteudo-footer .dados img {
   width: auto;
@@ -141,8 +142,191 @@ footer .conteudo-footer .dados ul li.e-mail::before {
 footer .conteudo-footer .menu-dados {
   display: flex;
   justify-content: center;
+  margin-top: 70px;
 }
 footer .conteudo-footer .menu-dados nav ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Divide em duas colunas iguais */
+  display: flex;
+}
+footer .conteudo-footer .menu-dados nav ul li {
+  width: auto;
+  display: block;
+}
+footer .conteudo-footer .redes {
+  margin-top: 70px;
+}
+footer .conteudo-footer .redes ul li {
+  margin-right: 15px;
+}
+footer .conteudo-footer .redes ul li:last-child {
+  margin-right: 0px;
+}
+footer .conteudo-footer .redes ul li i {
+  font-size: 1.2em;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  border: 1px solid #fff;
+}
+footer .conteudo-footer .redes ul li span {
+  display: none;
+}
+footer .creditos p {
+  font-size: 0.8em;
+}
+
+@media (max-width: 768px) {
+  header .topo img {
+    height: 25px;
+    width: auto;
+  }
+  header .topo nav a {
+    color: #00252e;
+    background-color: #fff;
+    border: 1px solid #fff;
+    padding: 15px 65px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.8125em;
+    display: inline-block;
+    padding: 15px 20px;
+  }
+  header .hero {
+    padding-top: 40px;
+  }
+  header .hero .txt-hero {
+    margin-right: 0px;
+  }
+  header .hero .txt-hero a {
+    color: #fff;
+    background-color: #ff52bf;
+    border: 1px solid #ff52bf;
+    padding: 15px 65px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.8125em;
+    display: inline-block;
+    margin-bottom: 40px;
+  }
+  header .hero img {
+    width: 100%;
+    height: auto;
+  }
+  main article {
+    margin-bottom: 40px;
+  }
+  main article .texto-boxs h3 {
+    font-size: 1.25em;
+    margin-bottom: 30px;
+  }
+  main article .texto-boxs p {
+    margin-bottom: 40px;
+  }
+  main article img {
+    width: 100%;
+    height: auto;
+  }
+  main .cta-footer h4 {
+    font-size: 1.25em;
+    margin-bottom: 30px;
+  }
+  main .cta-footer a {
+    color: #fff;
+    background-color: #ff52bf;
+    border: 1px solid #ff52bf;
+    padding: 15px 65px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.8125em;
+    display: inline-block;
+  }
+  footer {
+    background-color: #00252e;
+    padding-bottom: 70px;
+  }
+  footer .conteudo-footer {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  footer .conteudo-footer .dados img {
+    width: auto;
+    height: 30px;
+    filter: brightness(0) invert(1); /* Transforma elementos em branco */
+    margin-bottom: 40px;
+  }
+  footer .conteudo-footer .dados ul li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: start;
+  }
+  footer .conteudo-footer .dados ul li.endereco::before {
+    content: "";
+    background-image: url("../imagens/icon-location.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 80px;
+    height: 25px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  footer .conteudo-footer .dados ul li.telefone::before {
+    content: "";
+    background-image: url("../imagens/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  footer .conteudo-footer .dados ul li.e-mail::before {
+    content: "";
+    background-image: url("../imagens/icon-email.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  footer .conteudo-footer .menu-dados {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+  }
+  footer .conteudo-footer .menu-dados nav ul {
+    display: flex;
+  }
+  footer .conteudo-footer .menu-dados nav ul li {
+    width: auto;
+    display: block;
+  }
+  footer .conteudo-footer .redes {
+    margin-top: 45px;
+    margin-bottom: 45px;
+  }
+  footer .conteudo-footer .redes ul li {
+    margin-right: 15px;
+  }
+  footer .conteudo-footer .redes ul li:last-child {
+    margin-right: 0px;
+  }
+  footer .conteudo-footer .redes ul li i {
+    font-size: 1.2em;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    border: 1px solid #fff;
+  }
+  footer .conteudo-footer .redes ul li span {
+    display: none;
+  }
+  footer .creditos p {
+    font-size: 0.8em;
+  }
 }/*# sourceMappingURL=estilos.css.map */

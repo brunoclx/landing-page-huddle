@@ -101,9 +101,10 @@ main{
 
 footer{
     background-color: $darkCyan;
+    padding-bottom: 70px;
     .conteudo-footer{
         display: grid;
-        grid-template-columns: 2fr 2fr 1fr;
+        grid-template-columns: 2fr 3fr 1fr;
         .dados{
             img{
                 width: auto;
@@ -158,11 +159,207 @@ footer{
         .menu-dados{
             display: flex;
             justify-content: center;
+            margin-top: 70px;
             nav{
                 ul{
-                    display: grid;
-                    grid-template-columns: 1fr 1fr; /* Divide em duas colunas iguais */
+                    display: flex;
+                    li{
+                        width: auto;;
+                        display: block;
+                    }
                 }
+            }
+        }
+        .redes{
+            margin-top: 70px;
+            ul{
+                li{
+                    margin-right: 15px;
+                    &:last-child{
+                        margin-right: 0px;
+                    }
+                    i{
+                        font-size: 1.2em;
+                        width: 40px;
+                        height: 40px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 100%;
+                        border: 1px solid $branco;
+                    }
+                    span{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .creditos{
+        p{
+            font-size: .8em;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    header{
+        .topo{
+            img{
+                height: 25px;
+                width: auto;
+            }
+            nav{
+                a{
+                    @include btn($branco, $darkCyan, $branco);
+                    padding: 15px 20px;
+                }
+            }
+        }
+        .hero{
+            padding-top: 40px;
+            .txt-hero{
+                margin-right: 0px;
+                a{
+                    @include btn($pink, $branco, $pink);
+                    margin-bottom: $espaco-mb;
+                }
+            }
+            img{
+                width: 100%;
+                height: auto;
+            }        
+        }
+    }
+
+    main{
+        article{
+            margin-bottom: $espaco-mb;
+            .texto-boxs{
+                h3{
+                    font-size: 1.25em;
+                    margin-bottom: 30px;
+                }
+                p{
+                    margin-bottom: $espaco-mb;
+                }           
+            }
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .cta-footer{
+            h4{
+                font-size: 1.25em;
+                margin-bottom: 30px; 
+            }
+            a{
+                @include btn($pink, $branco, $pink)
+            }
+        }
+    }
+
+    footer{
+        background-color: $darkCyan;
+        padding-bottom: 70px;
+        .conteudo-footer{
+            display: grid;
+            grid-template-columns: 1fr;
+            .dados{
+                img{
+                    width: auto;
+                    height: 30px;
+                    filter: brightness(0) invert(1); /* Transforma elementos em branco */
+                    margin-bottom: $espaco-mb;
+                }
+                ul{
+                    li{
+                        margin-bottom: $espaco-mb - 20px;
+                        display: flex;
+                        align-items: start;
+                        &.endereco{
+                            &::before{
+                                content: '';
+                                background-image: url('../imagens/icon-location.svg');
+                                background-repeat: no-repeat;
+                                background-size: auto;
+                                width: 80px;
+                                height: 25px;
+                                display: inline-block;
+                                margin-right: 10px;
+                            }
+                        }
+                        &.telefone{
+                            &::before{
+                                content: '';
+                                background-image: url('../imagens/icon-phone.svg');
+                                background-repeat: no-repeat;
+                                background-size: auto;
+                                width: 25px;
+                                height: 25px;
+                                display: inline-block;
+                                margin-right: 10px;
+                            }
+                        }
+                        &.e-mail{
+                            &::before{
+                                content: '';
+                                background-image: url('../imagens/icon-email.svg');
+                                background-repeat: no-repeat;
+                                background-size: auto;
+                                width: 25px;
+                                height: 25px;
+                                display: inline-block;
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            .menu-dados{
+                display: flex;
+                justify-content: center;
+                margin-top: 35px;
+                nav{
+                    ul{
+                        display: flex;
+                        li{
+                            width: auto;;
+                            display: block;
+                        }
+                    }
+                }
+            }
+            .redes{
+                margin-top: 45px;
+                margin-bottom: 45px;
+                ul{
+                    li{
+                        margin-right: 15px;
+                        &:last-child{
+                            margin-right: 0px;
+                        }
+                        i{
+                            font-size: 1.2em;
+                            width: 40px;
+                            height: 40px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 100%;
+                            border: 1px solid $branco;
+                        }
+                        span{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        .creditos{
+            p{
+                font-size: .8em;
             }
         }
     }
