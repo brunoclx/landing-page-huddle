@@ -10,7 +10,7 @@ Meu quarto desafio proposto pelo site Frontend Mentor, para treinar as habilidad
 
 ## 🚀 Como acessar
 - Desafio proposto: [Frontend Mentor](https://www.frontendmentor.io/challenges/huddle-landing-page-with-alternating-feature-blocks-5ca5f5981e82137ec91a5100)
-- Minha solução: [Página de depoimentos](https://brunoclx.github.io/landing-page-huddle/)
+- Minha solução: [Landing Page Huddle](https://brunoclx.github.io/landing-page-huddle/)
 
 ## 📦 Tecnologias utilizadas
 - HTML
